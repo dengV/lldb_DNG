@@ -38,13 +38,46 @@ Don’t worry if yours is different; I’d be surprised if it wasn’t. Think of
 dengjiangzhou% echo "hello DNG" 1>dev>ttys001
 ### X
 
+<hr>
+
+
 dengjiangzhou% echo "hello debugger Deng " 1>/dev/ttys001
 ## √
+
+
+<hr>
 
 
 dengjiangzhou% echo "hello DNG" 1>dev/ttys001            
 zsh: not a directory: dev/ttys001
 ## X
 
+
+<hr>
+
+
 dengjiangzhou% echo "hello DNG" 1>/dev/ttys001  
 # 好
+
+
+
+
+
+<hr>
+
+
+<hr>
+
+
+
+Now switch back to the Xcode stderr tab. The words hello debugger should have popped up. You’ll use the same trick to pipe the output of Xcode’s stderr to this tab.
+
+
+
+
+Finally, close the third, unnamed tab and navigate back to the LLDB tab.
+
+
+
+
+To summarize: You should now have two Terminal tabs: a tab named "LLDB", which contains an instance of LLDB running, and another tab named "Xcode stderr", which contains the tty command you performed earlier.
